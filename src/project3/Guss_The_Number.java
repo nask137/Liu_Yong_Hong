@@ -1,7 +1,4 @@
 package project3;
-
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Random;
 import java.util.Scanner;
 

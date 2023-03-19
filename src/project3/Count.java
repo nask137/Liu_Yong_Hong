@@ -1,10 +1,6 @@
 package project3;
-
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Scanner;
-import java.util.function.BiConsumer;
-
 public class Count {
     public static void main(String[] args) {
         HashMap<Character, Integer> map = new HashMap<>();

@@ -1,7 +1,4 @@
 package project3;
-
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class Shou {
