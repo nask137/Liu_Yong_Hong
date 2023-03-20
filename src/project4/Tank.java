@@ -19,7 +19,11 @@ public class Tank {
         System.out.println("减速");
     }
     public void fire(){
-        System.out.println("开炮！！！！！！！！！！");
+        if (this.bulletAmount>0) {
+            System.out.println("开炮！！！！！！！！！！");
+            this.bulletAmount--;
+        }
+        else System.out.println("没子弹了！！！");
     }
 
     /**
