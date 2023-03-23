@@ -56,6 +56,7 @@ public class Tank {
      */
     public void setBulletAmount(int bulletAmount) {
         this.bulletAmount = bulletAmount;
+        System.out.println("新的子弹数量为"+bulletAmount);
     }
 
     public String toString() {

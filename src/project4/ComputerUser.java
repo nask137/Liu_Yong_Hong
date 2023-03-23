@@ -1,10 +1,12 @@
 package project4;
 public class ComputerUser {
     public static void main(String[] args) {
-        CD cd = new CD(2,2.0);
+        double []b={1,2.3,4,5,};
+        CD cd = new CD(b.length,b);
         Computer computer = new Computer(5,cd);
-        computer.getCd().setContent(5.0);
-        System.out.println(computer.getDate());
+        double []a={1,2.3,4,8};
+        computer.getCd().setContent(a);
+        System.out.println(computer.getCd());
 
     }
 }
