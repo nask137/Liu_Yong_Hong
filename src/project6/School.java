@@ -4,10 +4,10 @@ public class School {
     String schoolName;
      //内部类声明对象newsPaper
     InnerNewsPaper newsPaper ;
-    School() {
+    public School() {
         this("某某大学"); //调用带参数的构造方法
     }
-    School(String s) {
+    public School(String s) {
         //创建对象newsPaper
         newsPaper= new InnerNewsPaper();
         String [] content = {"举办迎新会.", "机械系获得机器人大赛冠军.",

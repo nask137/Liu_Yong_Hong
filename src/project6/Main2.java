@@ -20,9 +20,7 @@ public class Main2 {
             System.out.println("需要输入数字");
         }
         } catch (IndexOutOfBoundsException e) {
-            System.out.println("遍历次数过多");
-        }finally {
-            System.out.println("请重新运行此程序");
+            System.out.println("遍历次数过多，请修改代码后重新运行此程序");
         }
     }
 }
