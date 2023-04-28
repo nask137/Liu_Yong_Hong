@@ -1,6 +1,7 @@
 package project7;
 
 import com.sun.deploy.panel.NumberDocument;
+
 import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -59,32 +60,31 @@ public class Main3 extends JFrame implements MouseListener {
             int b = 0;
             int c = 0;
             if (flag == 1) {
-                if(!jTextField.getText().equals(""))a=Integer.parseInt(jTextField.getText());
-                if(!jTextField2.getText().equals(""))b=Integer.parseInt(jTextField2.getText());
-                c=a+b;
+                if (!jTextField.getText().equals("")) a = Integer.parseInt(jTextField.getText());
+                if (!jTextField2.getText().equals("")) b = Integer.parseInt(jTextField2.getText());
+                c = a + b;
                 jTextField3.setText(String.valueOf(c));
                 this.setVisible(true);
-            }else if (flag==2){
-                if(!jTextField.getText().equals(""))a=Integer.parseInt(jTextField.getText());
-                if(!jTextField2.getText().equals(""))b=Integer.parseInt(jTextField2.getText());
-                c=a-b;
+            } else if (flag == 2) {
+                if (!jTextField.getText().equals("")) a = Integer.parseInt(jTextField.getText());
+                if (!jTextField2.getText().equals("")) b = Integer.parseInt(jTextField2.getText());
+                c = a - b;
                 jTextField3.setText(String.valueOf(c));
                 this.setVisible(true);
-            } else if (flag==3) {
-                if(!jTextField.getText().equals(""))a=Integer.parseInt(jTextField.getText());
-                if(!jTextField2.getText().equals(""))b=Integer.parseInt(jTextField2.getText());
-                c=a*b;
+            } else if (flag == 3) {
+                if (!jTextField.getText().equals("")) a = Integer.parseInt(jTextField.getText());
+                if (!jTextField2.getText().equals("")) b = Integer.parseInt(jTextField2.getText());
+                c = a * b;
                 jTextField3.setText(String.valueOf(c));
                 this.setVisible(true);
-            } else{
-                if(!jTextField.getText().equals(""))a=Integer.parseInt(jTextField.getText());
-                if(jTextField2.getText().equals(""))b=1;
-                else b=Integer.parseInt(jTextField2.getText());
-                if(b==0) {
+            } else {
+                if (!jTextField.getText().equals("")) a = Integer.parseInt(jTextField.getText());
+                if (jTextField2.getText().equals("")) b = 1;
+                else b = Integer.parseInt(jTextField2.getText());
+                if (b == 0) {
                     showJDialog("除数不能为0");
-                Thread.sleep(5000);
-                }
-               else {
+                    Thread.sleep(5000);
+                } else {
                     c = a / b;
                     jTextField3.setText(String.valueOf(c));
                     this.setVisible(true);
