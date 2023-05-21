@@ -15,6 +15,7 @@ public class Triangle {
         this.a = a;
         this.b = b;
         this.c = c;
+        System.out.println("此三遍可以构成三角形！");
     }
 
     /**

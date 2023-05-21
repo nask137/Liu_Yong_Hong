@@ -1,5 +1,4 @@
 package project6;
-
 public class DangerException extends Exception {
     String message;
     public DangerException() {

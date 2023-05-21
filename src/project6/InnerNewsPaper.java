@@ -1,5 +1,4 @@
 package project6;
-
 class InnerNewsPaper {
     String [] content;
     String paperName = "校新闻周报";

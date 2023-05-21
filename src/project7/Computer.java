@@ -28,7 +28,7 @@ public class Computer extends JFrame implements MouseListener, ActionListener {
     JTextArea jTextArea3 = new JTextArea("/");
     JTextArea jTextArea4 = new JTextArea("%");
     JPanel jpanel = new JPanel();
-    public Computer() {
+    public Computer() throws InterruptedException {
         this.setTitle("算术测试");
         this.setBounds(700, 200, 600, 160);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -78,8 +78,12 @@ public class Computer extends JFrame implements MouseListener, ActionListener {
         }else {
              Random random = new Random();
              flag=random.nextInt(4);
-             load();
-        }
+             try {
+                 load();
+             } catch (InterruptedException ex) {
+                 throw new RuntimeException(ex);
+             }
+         }
     }
     public  void judge (){
         if(flag==0) {
@@ -120,16 +124,13 @@ public class Computer extends JFrame implements MouseListener, ActionListener {
     }
     @Override
     public void mousePressed(MouseEvent e) {
-
     }
     @Override
     public void mouseReleased(MouseEvent e) {
-
     }
     @Override
     public void mouseEntered(MouseEvent e) {
     }
-
     @Override
     public void mouseExited(MouseEvent e) {
     }
@@ -151,7 +152,7 @@ public int getNumber(int level){
             level=10000;
         }
     }
-    public  void load(){
+    public  void load() throws InterruptedException {
         jpanel.remove(jTextArea);
         jpanel.remove(jTextArea1);
         jpanel.remove(jTextArea3);
@@ -162,6 +163,7 @@ public int getNumber(int level){
         if(flag==3)jpanel.add(jTextArea4);
         this.setContentPane(jpanel);
         first.setText(String.valueOf(getNumber(level)));
+        Thread.sleep(100);
         second.setText(String.valueOf(getNumber(level)));
         this.setVisible(true);
     }

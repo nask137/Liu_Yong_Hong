@@ -1,5 +1,4 @@
 package project6;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,10 +9,12 @@ public class Main3 {
         int a;
         int b;
         int c;
+        System.out.println("请输入三角形的三条边 （中间用空格隔开）");
         try {
             a = NextInt();
             b = NextInt();
             c = NextInt();
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

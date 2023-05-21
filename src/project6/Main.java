@@ -5,5 +5,4 @@ public class Main {
         School school = new School("创新大学");
         school.showNews();
     }
-
 }

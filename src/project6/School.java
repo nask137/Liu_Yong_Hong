@@ -1,5 +1,4 @@
 package project6;
-
 public class School {
     String schoolName;
      //内部类声明对象newsPaper
@@ -18,6 +17,4 @@ public class School {
     public void showNews(){
         newsPaper.showContent(schoolName);
     }
-
-
 }

@@ -12,7 +12,7 @@ public class Main2 {
                 for (int i = 0; i <4 ; i++) {
                     test[i]=Integer.parseInt(sc.next());
                 }
-            for (int i=0;i<5;i++) {
+            for (int i=0;i<4;i++) {
                 System.out.println(test[i]);
             }
 

@@ -1,11 +1,8 @@
 package project7;
-
 import com.sun.deploy.panel.NumberDocument;
-
 import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-
 public class Main3 extends JFrame implements MouseListener {
     public static int flag = 1;
     JButton jButton = new JButton("+");

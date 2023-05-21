@@ -1,5 +1,4 @@
 package project7;
-
 import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -12,15 +11,15 @@ public class Main2 extends JFrame implements MouseListener {
     JPanel jpanel = new JPanel();
     public Main2(){
         this.setTitle("test");
-        this.setBounds(600, 200, 400, 400);
+        this.setBounds(600, 200, 200, 200);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         jpanel.setLayout(null);
-        jButton.setBounds(50,50,30,30);
+        jButton.setBounds(50,50,30,10);
         jButton.addMouseListener(this);
-        jButton2.setBounds(100,50,30,30);
+        jButton2.setBounds(100,50,30,10);
         jButton2.addMouseListener(this);
-        jLabel.setBounds(50,80,30,30);
-        jLabel2.setBounds(100,80,30,30);
+        jLabel.setBounds(50,80,30,20);
+        jLabel2.setBounds(100,80,30,20);
         jpanel.add(jButton);
         jpanel.add(jButton2);
         this.setContentPane(jpanel);
@@ -33,12 +32,12 @@ public class Main2 extends JFrame implements MouseListener {
         if(source==jButton){
             jpanel.add(jLabel);
             this.setContentPane(jpanel);
-            showJDialog(jLabel.getText());
+            //showJDialog(jLabel.getText());
             this.setVisible(true);
         }else {
             jpanel.add(jLabel2);
             this.setContentPane(jpanel);
-            showJDialog(jLabel2.getText());
+            //showJDialog(jLabel2.getText());
             this.setVisible(true);
         }
     }
